@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { SupabaseService } from "../supabase";
 
 export default function Home() {
-  const [email, setEmail] = useState("demo@leapingai.com");
-  const [password, setPassword] = useState("demo@leapingai.com");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [loggedIn, setLoggedIn] = useState(false);
   const [error, setError] = useState("");
   const [mainData, setMainData] = useState<any[]>([]);
